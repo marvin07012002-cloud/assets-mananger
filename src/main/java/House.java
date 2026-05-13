@@ -53,6 +53,8 @@ public class House extends Asset {
              System.out.println("good");
          } else if (this.squareFoot >= 90) {
              System.out.println("fair");
+         } else if (this.squareFoot >= 80) {
+             System.out.println("poor");
          }
         return 0;
     }
