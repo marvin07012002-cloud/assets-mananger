@@ -38,12 +38,17 @@ public class Vehicle extends Asset {
 
     @Override
     public double getValue(){
+        double depretiation = 0;
         LocalDate today =  LocalDate.now();
         int currentYear = today.getYear();
         int yearsOld = currentYear - this.year;
 
-        if (yearsOld <= 3){
-
+        if (yearsOld <= 3 && yearsOld >=0){
+            depretiation = .03 * yearsOld;
+        } else if (yearsOld <= 6) {
+            depretiation = .06 * yearsOld;
+        } else if (yearsOld <= 10) {
+            depretiation = .08 * yearsOld;
         }
 
 
