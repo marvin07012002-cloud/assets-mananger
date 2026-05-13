@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Vehicle extends Asset {
     private String makeModel;
     private int year;
@@ -36,6 +38,15 @@ public class Vehicle extends Asset {
 
     @Override
     public double getValue(){
+        LocalDate today =  LocalDate.now();
+        int currentYear = today.getYear();
+        int yearsOld = currentYear - this.year;
+
+        if (yearsOld <= 3){
+
+        }
+
+
         return 2;
     }
 }
