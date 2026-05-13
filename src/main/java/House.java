@@ -46,7 +46,15 @@ public class House extends Asset {
 
     @Override
     public double getValue(){
-        return 4;
+
+         if (this.squareFoot >= 180){
+             System.out.println("excellent");
+        } else if (this.squareFoot >= 130) {
+             System.out.println("good");
+         } else if (this.squareFoot >= 90) {
+             System.out.println("fair");
+         }
+        return 0;
     }
 
 }
