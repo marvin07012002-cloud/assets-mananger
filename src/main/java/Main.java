@@ -21,7 +21,7 @@ public class Main {
                 "Roll Royce Mcallan", 2027, 500);
         assetArrayList.add(rollRoyceMcallan);
 
-    for(Asset asset: assetArrayList);
-        System.out.println(assetArrayList);
+//    for(Asset asset: assetArrayList);
+//        System.out.println(assetArrayList);
     }
 }
